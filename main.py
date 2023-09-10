@@ -38,7 +38,10 @@ def parse_args():
 
     # Dataset
     parser.add_argument(
-        "--cv_folds_path", type=str, help="cross-validation directory path"
+        "--cv_folds_path",
+        type=str,
+        required=True,
+        help="cross-validation directory path",
     )
     parser.add_argument(
         "--valid_fold_num",
