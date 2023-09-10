@@ -49,6 +49,7 @@ We also tested our code with the following libraries:
         --result_path /path/to/validation/result \
 ```
 
+---
 
 Alternatively, after building cross-validation folds, you can modify `run_experiments.sh` and execute it.
 ```
