@@ -5,7 +5,7 @@ This repository contains the code for the experiments conducted in our article t
 The article is currently under review.
 
 ## Requirements
-All our experiments were implemented in Python 3.8 and PyTorch 1.8.1.
+All our experiments were implemented with Python 3.8 and PyTorch 1.8.1.
 
 We also tested our code with the following libraries:
 - xmltodict 0.13.0
