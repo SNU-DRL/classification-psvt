@@ -2,8 +2,27 @@
 
 This repository contains the code for the experiments conducted in our article titled [Classification of Underlying Paroxysmal Supraventricular Tachycardia Types Using Deep Learning of Sinus Rhythm Electrocardiograms](https://journals.sagepub.com/doi/10.1177/20552076241281200).
 
+<p align="center">
+    <img src="images/overview.jpg" width="90%">
+</p>
+
+Unfortunately, the datasets analyzed in this study are not publicly available due to patient privacy and security concerns.
+
 ## Citation
-Kwon S, Suh J, Choi E-K, et al. Classification of underlying paroxysmal supraventricular tachycardia types using deep learning of sinus rhythm electrocardiograms. DIGITAL HEALTH. 2024;10. doi:10.1177/20552076241281200
+If you find our repository or paper useful, please consider citing our work:
+
+```
+@article{kwon2024classification,
+    title={Classification of underlying paroxysmal supraventricular tachycardia types using deep learning of sinus rhythm electrocardiograms},
+    author={Kwon, Soonil and Suh, Jangwon and Choi, Eue-Keun and Kim, Jimyeong and Ju, Hojin and Ahn, Hyo-Jeong and Kim, Sunhwa and Lee, So-Ryoung and Oh, Seil and Rhee, Wonjong},
+    journal={Digital health},
+    volume={10},
+    pages={20552076241281200},
+    year={2024},
+    publisher={SAGE Publications Sage UK: London, England}
+}
+```
+
 
 ## Requirements
 All our experiments were implemented with Python 3.8 and PyTorch 1.8.1.
@@ -25,7 +44,7 @@ We also tested our code with the following libraries:
         --c_avrt_path /path/to/c_avrt/samples \
         --avnrt_path /path/to/avnrt/samples \
         --save_path /path/to/cross_validation/folds \
-        --num_folds 10 \
+        --num_folds 10
 ```
 
 2. `main.py`
@@ -40,19 +59,19 @@ We also tested our code with the following libraries:
         --cv_folds_path /path/to/cross_validation/folds \
         --valid_fold_num 0 \
         --num_leads 12 \
-        --result_path /path/to/validation/result \
+        --result_path /path/to/validation/result
 ```
 
 3. `analyze_all_fold_results.py`
 - Aggregates the results of 10-fold cross validation.
 ```
     python analyze_all_fold_results.py
-        --result_path /path/to/validation/result \
+        --result_path /path/to/validation/result
 ```
 
 ---
 
-Alternatively, after building cross-validation folds, you can modify `run_experiments.sh` and execute it.
+Alternatively, after building the cross-validation folds by running `build_cv_folds.py`, you can modify `run_experiments.sh` as needed and execute it.
 ```
     sh run_experiments.sh
 ```
