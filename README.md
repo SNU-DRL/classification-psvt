@@ -1,6 +1,6 @@
 # Classification of Underlying Paroxysmal Supraventricular Tachycardia Types Using Deep Learning of Sinus Rhythm Electrocardiograms
 
-This repository contains the code for the experiments conducted in our article titled [Classification of Underlying Paroxysmal Supraventricular Tachycardia Types Using Deep Learning of Sinus Rhythm Electrocardiograms](https://journals.sagepub.com/doi/10.1177/20552076241281200).
+This repository contains the code for the experiments conducted in our research paper titled [*Classification of Underlying Paroxysmal Supraventricular Tachycardia Types Using Deep Learning of Sinus Rhythm Electrocardiograms*](https://journals.sagepub.com/doi/10.1177/20552076241281200).
 
 <p align="center">
     <img src="images/overview.jpg" width="90%">
